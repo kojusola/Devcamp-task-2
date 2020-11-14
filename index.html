@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registration.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>SignIn Page</title>
+</head>
+<body class="body">
+    <div class="containers all">
+        <div class="text-side box1">
+            <h1 class="text-h1">Register Your Account</h1>
+            <p class="text-left">Registering an account gives you access to sweet promo and event available to only registered customers </p>
+            <p class="text-left">You do not have an account? <a href="registration.html">Register</a></p>
+        </div>
+        <div class="colclass box1">
+            <div class="inside">
+                <div class="card-title text-center pt-3">
+                    <h1 class="form-head">SignIn</h1>
+                </div>
+                <form action="">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                        <p id="err_name" class="err_text"></p><br>
+                    </div>
+                    <div class="form-group"> 
+                        <input type="password" id="password" name="password" placeholder="Enter your password" class="form-control">
+                        <p id="err_pass" class="err_text"></p><br>
+                    </div>
+                    <input type="submit" value="Register" class="btn btn-outline-primary px-5 bott">
+                </form>
+            </div>
+        </div>
+</div>
+    <footer class="footer">
+        <div class="main-content">
+            <div class="left box">
+                <h2>About Us</h2>
+                <div class="content">
+                    <p>Our mission is to make it easy to do business anywhere. We enable businesses to transfrom the way they market, sell and operate and improve their efficiencies</p>
+                    <div class="social-icons">
+                        <a href="#"><span class= "fa fa-facebook-official"></span></a>
+                        <a href="#"><span class= "fa fa-twitter"></span></a>
+                        <a href="#"><span class= "fa fa-instagram"></span></a>
+                        <a href="#"><span class= "fa fa-youtube"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="center box">
+                <h2>Address</h2>
+                <div class="content">
+                    <div class="place">
+                        <span class="fa fa-map-marker"></span>
+                        <span class="text">Ibadan, Nigeria</span>
+                    </div>
+                    <div class="phone">
+                        <span class="fa fa-phone"></span>
+                        <span class="text">09077881829</span>
+                    </div>
+                    <div class="email">
+                        <span class="fa fa-envelope"></span>
+                        <span class="text">adeola5678gmail.com</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="right box">
+                    <h2>Contact Us</h2>
+                    <div class="content">
+                        <form action="">
+                            <div class="email">
+                                <input type="email" placeholder="Enter Your Email" required>
+                            </div>
+                            <div class="msg">
+                                <label for="msg">Message *</label>
+                                <textarea name="message" id="msg" cols="25" rows="2" required></textarea>
+                            </div>
+                            <div class="botton-send">
+                                <button class="btn btn-danger" type="submit">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="validation.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

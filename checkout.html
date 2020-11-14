@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Checkout</title>
+</head>
+<body class="checkoutbody">
+    <nav class="topnav">
+        <div class="logo">
+            <img src="images/logo2.jfif" alt="">
+        </div> 
+        <ul class="pagenav">
+            <li><a href="homepage.html" class="words">Home</a></li>
+            <li><a href="index.html" class="words">Log Out</a></li>
+            <li><a href="cart.html" class="headCart">
+                <i class="fa fa-shopping-cart" class="font"></i>
+                <p>Cart(<span>0</span>)</p>
+            </a></li>
+        </ul>
+    </nav>
+    <section class="totalrow">
+        <div class="title"><h2>Checkout</h2></div>
+        <div class="col-75">
+            <div class="container contcheck">
+                <form action="">
+                    <div class="row">
+                        <div class="col-50 billing">
+                            <h3>Billing Address</h3>
+                            <label for="fname"><i class="fa fa-user"></i>  Full Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Full name"><br>
+                            <label for="email" class="fa fa-envelope"></i>  Email</label>
+                            <input type="text" id="email" name="email" placeholder="Enter Your Email Address"><br>
+                            <label for="address"><i class="fa fa-address-card-o"></i>  Address</label>
+                            <input type="text" id="address" name="address" placeholder="Enter Your Address"><br>
+                            <label for="city"><i class="fa fa-institution"></i>  City</label>
+                            <input type="text" id="city" name="city" placeholder="Enter Your City"><br>
+
+                            <div class="row">
+                                <div class="col-50">
+                                    <label for="state"> State</label>
+                                    <input type="text" id="state" placeholder="Enter your state">
+                                </div>
+                                <div class="col-50">
+                                    <label for="Zip">Zip code</label>
+                                    <input type="text" id="Zip"placeholder="Enter your zip code">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-50">
+                            <h3>Payment</h3>
+                            <label for="fname">Accepted</label>
+                            <div class="icon-container">
+                                <i class="fa fa-cc-visa" style="color:navy;"></i>
+                                <i class="fa fa-cc-amex" style="color:blue;"></i>
+                                <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                                <i class="fa fa-cc-discover" style="color:orange;"></i>
+                            </div>
+                            <label for="cname">Name on Card</label>
+                            <input type="text" id="cname" name="cardname" placeholder="Card Name"><br>
+
+                            <label for="ccnum">Credit Card Number</label>
+                            <input type="text" id="ccnum" name="cardnumber" placeholder="Card Number"><br>
+
+                            <label for="expmonth">Expiry Month</label>
+                            <input type="text" id="expmonth" name="expmonth" placeholder="Expiry Month"><br>
+                            <div class="row">
+                                <div class="col-50">
+                                    <label for="expyear">Expiry Year</label>
+                                    <input type="text" id="cvv" placeholder="CVV">
+                                </div>
+                                <div class="col-50">
+                                    <label for="cvv">CVV</label>
+                                    <input type="text" id="cvv" placeholder="CVV">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-placeorder">
+                        <input type="submit" value="Place order" class="btn btn-primary">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </section>
+    <footer class="footer">
+        <div class="main-content">
+            <div class="left box">
+                <h2>About Us</h2>
+                <div class="content">
+                    <p>Our mission is to make it easy to do business anywhere. We enable businesses to transfrom the way they market, sell and operate and improve their efficiencies</p>
+                    <div class="social-icons">
+                        <a href="#"><span class= "fa fa-facebook-official"></span></a>
+                        <a href="#"><span class= "fa fa-twitter"></span></a>
+                        <a href="#"><span class= "fa fa-instagram"></span></a>
+                        <a href="#"><span class= "fa fa-youtube"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="center box">
+                <h2>Address</h2>
+                <div class="content">
+                    <div class="place">
+                        <span class="fa fa-map-marker"></span>
+                        <span class="text">Ibadan, Nigeria</span>
+                    </div>
+                    <div class="phone">
+                        <span class="fa fa-phone"></span>
+                        <span class="text">09077881829</span>
+                    </div>
+                    <div class="email">
+                        <span class="fa fa-envelope"></span>
+                        <span class="text">adeola5678gmail.com</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="right box">
+                    <h2>Contact Us</h2>
+                    <div class="content">
+                        <form action="">
+                            <div class="email">
+                                <input type="email" placeholder="Enter Your Email" required>
+                            </div>
+                            <div class="msg">
+                                <label for="msg">Message *</label>
+                                <textarea name="message" id="msg" cols="25" rows="2" required></textarea>
+                            </div>
+                            <div class="botton-send">
+                                <button class="btn btn-danger" type="submit">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
